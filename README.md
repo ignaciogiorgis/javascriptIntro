@@ -2,6 +2,8 @@ Introduccion a javascript en donde repaso y explico sintaxis y ejemplos de codig
 
 Los temas que se visualizan son 
 
+Javascrip01.js
+
 1-Variables:
         
         -var
@@ -22,5 +24,9 @@ Los temas que se visualizan son
           -concat
           
           -Template String
+          
+          -slice, subString y charAt
+          
+          -replace
           
           
