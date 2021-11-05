@@ -1,19 +1,19 @@
-Introduccion a javascript en donde repaso y explico sintaxis y ejemplos de codigo
+💻💻💻 Introduccion a javascript en donde repaso y explico sintaxis y ejemplos de codigo 💻💻💻
 
 Los temas que se visualizan son 
 
-Javascrip01.js
+💻 Javascrip01.js
 
-1-Variables:
+🌍 1-Variables:
         
-        -var
+           -var
         
-        -let
+           -let
         
-        -const
+           -const
 
 
-2-Strings:
+📝 2-Strings:
 
           -Formas de crear strings
           
