@@ -149,3 +149,111 @@ const datos3 = `${nombre} ${apellido}`;
 // llaves invertidas se hacen con alt 96 y las varibles van dentro de llaves anteponiendo un simbolo de $ esto hace que sea todo un 
 // mismo string y se vulve menos complejo si tuvieramos que poner muchos simbolos +
 
+//--trim()
+
+// cuando sea nesesario eliminar los espacios en blanco antes y despues del string se puede utilizar la funcion trim() de la siguiente manera.
+
+
+const escrito = '             hola mundo                     ';
+
+// estos espacios en blanco suman cantidad de caracteres y pensando en el futuro cuando se trabaje con formularios estos espacios pueden generar algun tiempo de problemas
+
+const escritoFinal = escrito.trim();
+
+// resultado 'hola mundo'
+
+// hoy en dia existen trimStar() y trimEnd() que de manera intuitiva una elimina los espacios al comienzo y la otra al final.
+ 
+const escritoFinal1 = escrito.trimStart();
+
+// resultado 'hola mundo                     '
+
+const escritoFinal2 = escrito.trimEnd();
+
+// resutlado '             hola mundo'
+
+// tambien se pueden encadenar los metodos y quedar con una sintaxis asi:
+
+const escritoFinal1 = escrito.trimStart().trimEnd();
+
+
+// resultado 'hola mundo'
+
+// --replace()
+// replace es un metodo para trabaja con strings que nos permite reemplazar paarte de el
+
+const saludo = 'hola mundo';
+
+const saludoPersona = saludo.replace('mundo', 'Señor');
+
+// resultado 'hola señor'
+
+// --slice()
+//El método slice() devuelve una copia de una parte del array dentro de un nuevo array empezando por inicio hasta fin (fin no incluido). El array original no se modificará.
+
+const saludo1 = 'hola mundo desde javascript';
+
+const resultado = saludo1.slice(1,4);
+
+// los parametros de la funcion son desde donde en terminos de posicion hasta donde queremos cortar
+
+// resultado 'ola'
+// si no se colocaran los dos parametros y solo se insertar uno 
+// basicamente retornaria todos desde la posicion 5 hasta el final 
+
+const resultado1 = saludo1.slice(5);
+
+// resultado 'mundo desde javascript'
+// lo utilmo que pude pasar es que en los parametros el numero de inicio sea mayor al del final en este caso el metodo no retorna nada directamente
+// una alternativa a slice() 
+//--subString()
+
+//El substring() método devuelve un subconjunto de un objeto String.
+
+const resultado2 = saludo1.substring(4,1);
+
+// resutlado 'ola'
+// lo interesante de esto radica en la diferencia que existe entre subString y Slice, lo que se podria decir es que 
+// subString es un poco mas inteligente y que si la posicion inicial es mayor ala final este internamente los cambia de lugar
+// dejando que algo como lo del ejemplo se vea como  const resultado = saludo1.substring(1,4); a difenrecia que slice no retorna nada en tal caso.
+
+//--charAt()
+//El método charAt() de String devuelve en un nuevo String el carácter UTF-16 de una cadena.
+//el parametro de este metodo el es el indice o lugar del caracter que queresmo que retorne.
+
+const resultado3 = saludo1.charAt(0);
+
+//resultado  'h'
+
+//--repeat()
+//El método repeat() construye y devuelve una nueva cadena que contiene el número especificado de copias de la cadena en la cual fue llamada, concatenados.
+
+
+const resultado4 = saludo1.repeat(3);
+
+// si se coloca en el parametro un  numero que no sea entero javascript lo redondea
+
+//--split()
+//El método split() divide un objeto de tipo String en un array (vector) de cadenas mediante la separación de la cadena en subcadenas.
+
+
+const resultado5 = saludo1.split(' ');
+
+//resultado ['hola', 'mundo', 'desde', 'javascript']
+
+//--toUpperCase()
+//El toUpperCase() método devuelve el valor convertido en mayúsculas de la cadena que realiza la llamada.
+
+const resultado6 = saludo1.toUpperCase();
+
+
+// resultado 'HOLA MUNDO DESDE JAVASCRIPT'
+
+//--toLowwerCase()
+//El método toLowerCase() devuelve el valor en minúsculas de la cadena que realiza la llamada.
+
+
+
+const resultado7 = saludo1.toLowerCase();
+
+//resultado 'hola mundo desde javascript'
