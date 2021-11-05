@@ -29,4 +29,12 @@ Los temas que se visualizan son
           
           -replace
           
+🤓3 Numeros:
+
+            -Operaciones 
+            
+            -Objeo Math
+            
+🧭4 Operadores
+          
           
