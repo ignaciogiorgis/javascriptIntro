@@ -29,6 +29,8 @@ Los temas que se visualizan son
           
           -replace
           
+💻 Javascrip02.js          
+          
 🤓3 Numeros:
 
             -Operaciones 
@@ -36,5 +38,23 @@ Los temas que se visualizan son
             -Objeto Math
             
 🧭4 Operadores
+
+💻 Javascrip03.js
+
+💾5 Objetos:
+
+            -Sintaxis
+            
+            -object literal
+            
+            -seal y freeze
+            
+            -object constructor
+            
+            -spread operator
+            
+            -destructuring
+            
+            -values, entries y keys
           
           
