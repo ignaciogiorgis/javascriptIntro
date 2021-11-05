@@ -33,7 +33,7 @@ Los temas que se visualizan son
 
             -Operaciones 
             
-            -Objeo Math
+            -Objeto Math
             
 🧭4 Operadores
           
