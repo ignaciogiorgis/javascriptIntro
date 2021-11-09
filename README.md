@@ -70,4 +70,11 @@ Los temas que se visualizan son
           
           -map y forEach
           
+🤓7 Funciones:
+
+              - sintaxis
+              
+              -declaracion y expresion
+              
+              -arrow function
           
