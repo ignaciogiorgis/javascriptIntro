@@ -98,3 +98,37 @@ evaluacion.map((nota) => {
 // resultado [ 10, 10, 7, 8, 9, 10, 9, 9, 6, 6, 6 ] un nuevo array con los aprobados
 // la diferencia entre map y forEach es que map crea un nuevo array apartir de alguna condicion como la de apobacion 
 // y el forEach solo recorre el array
+
+
+//------------------------------------------------------------------------------------------------------------
+//7-- Funciones
+//Function declaration sintaxis
+
+function nuevaFuncion() {
+    console.log('Hola mundo')
+}
+
+// palabra reservada function seguido del nombre de la misma, lo que sigue es son los parentesis, dentro de ellos
+// van si tiene los parametros de la funcion, po ultimo las llaves encierra todo el cuerpo de la funcion.
+
+// luego se llama ala funcion 
+
+nuevaFuncion();
+
+// resultado en consola 'hola mundo'
+
+
+// funcion Expression sintaxis
+
+const funcionNueva = function() {
+    console.log('Hola mundo2')
+}
+
+// se llama de la misma forma
+
+funcionNueva();
+
+// la diferencia entre ambas es que si en ambos casos se llamara ala funcion antes de declararla la primera
+//mostraria 'hola mundo' y la segunda daria error, estos se debe al concepto de hoisting
+// hoisting: Hosting, o elevación es el comportamiento por defecto de JavaScript de “mover declaraciones al principio” del código.
+//el concepto fue pensado en cómo funcionan los contextos de ejecución en JavaScript (específicamente las fases de creación y ejecución)
