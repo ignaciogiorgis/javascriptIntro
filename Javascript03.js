@@ -1,4 +1,4 @@
-//6--Objetos
+//5--Objetos
 //Objet literal, esta seria la sintaxis para un objeto de varias propiedades o keys(llaves) con su valor 
 
 
