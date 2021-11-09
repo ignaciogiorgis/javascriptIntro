@@ -56,5 +56,18 @@ Los temas que se visualizan son
             -destructuring
             
             -values, entries y keys
+            
+💻 Javascrip04.js
+
+💻6 Arrays
+          -creacion
+          
+          -acceso
+          
+          -destructuring
+          
+          -push, pop, unShift, shift
+          
+          -map y forEach
           
           
