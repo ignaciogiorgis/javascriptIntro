@@ -132,3 +132,20 @@ funcionNueva();
 //mostraria 'hola mundo' y la segunda daria error, estos se debe al concepto de hoisting
 // hoisting: Hosting, o elevación es el comportamiento por defecto de JavaScript de “mover declaraciones al principio” del código.
 //el concepto fue pensado en cómo funcionan los contextos de ejecución en JavaScript (específicamente las fases de creación y ejecución)
+
+// arrow functions--
+
+const flecha = () => {
+    console.log('Funcion flecha sintaxis')
+}
+
+// en este ejemplo se podrian sacar las llaves si lo que esta dentro del cuerpo de la funcion es de una sola linea
+
+const flecha2 = () => console.log('Funcion flecha sintaxis')
+
+// ademas cuando tienen un sola linea dan por implicito el return de la funcion por lo que se podria hacer de esta forma
+
+const flecha3 = () => 'Funcion flecha sintaxis'
+console.log(flecha3())
+
+// esta tres formas tienen un resultado igual
