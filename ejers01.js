@@ -62,4 +62,33 @@ function squareDigits(num){
     
 } 
 
-//
+//Defina una función que tome un argumento de número entero y devuelva un valor lógico trueo false dependiendo de si el número entero es primo.
+
+
+function isPrime(num) {
+  if(num<=1){
+    return false;
+  }
+  for (var i = 2; i < num; i++) {
+      if (num%i===0 ){
+          return false;
+      }
+  };
+  return true;
+
+}
+
+// convertir un numero binario a un decimal
+
+const binaryArrayToNumber = arr => {
+  let suma = 0;
+    let arr1 = arr.reverse();
+    
+    for(let i = 0; i <arr1.length ; i++){
+       
+        suma =  arr1[i]*Math.pow(2,i) + suma;
+        
+    }
+  return suma;
+};
+
