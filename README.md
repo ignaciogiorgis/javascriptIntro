@@ -92,4 +92,15 @@ Los temas que se visualizan son
                         
                         -operadores || y &&
                         
-💾9 Iteradores                         
+💾9 Iteradores
+
+                        - For
+                        
+                        - While
+                        
+                        -Do While
+                        
+                        - For in
+                        
+                        - For of
+                        
