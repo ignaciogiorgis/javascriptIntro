@@ -77,4 +77,19 @@ Los temas que se visualizan son
               -declaracion y expresion
               
               -arrow function
-          
+
+💻 Javascrip05.js
+
+🤓8 Estructuras de control:
+
+                        - If
+                        
+                        - If anidado
+                        
+                        - Switch
+                        
+                        -Ternario
+                        
+                        -operadores || y &&
+                        
+💾9 Iteradores                         
