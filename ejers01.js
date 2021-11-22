@@ -60,4 +60,6 @@ function squareDigits(num){
      }
      return array; 
     
-}  
+} 
+
+//
