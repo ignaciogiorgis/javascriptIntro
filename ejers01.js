@@ -92,3 +92,20 @@ const binaryArrayToNumber = arr => {
   return suma;
 };
 
+/* Los estadounidenses son gente extraña: en sus edificios, el primer piso es en realidad la planta baja y no hay piso 13 (debido a la superstición).
+
+Escribe una función que dado un piso en el sistema americano devuelve el piso en el sistema europeo.
+
+Con el primer piso reemplazado por la planta baja y el piso 13 eliminado, los números se mueven hacia abajo para tomar su lugar. En el caso de más de 13, se mueven hacia abajo en dos porque hay dos números omitidos debajo de ellos. */
+
+function getRealFloor(n) {
+  if(n < 0){
+    return n;
+  }
+  if(n<14){
+    return n-1;
+  }
+  if(n>=15){
+    return n-2;
+  }
+}

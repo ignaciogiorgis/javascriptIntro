@@ -142,3 +142,19 @@ const object = { a: 1, b: 2, c: 3 };
 for (const property in object) {
   console.log(`${property}: ${object[property]}`);
 }
+
+
+// 10 Arrya methods
+
+// some()
+
+const meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo'];
+
+const productos = [
+    {nombre:televisor, precio:15000},
+    {nombre:pc, precio:4000},
+    {nombre:auto, precio:65000},
+    {nombre:aire, precio:5000},
+    {nombre:mesa, precio:1000},
+    {nombre:impresora, precio:15000}
+]
