@@ -146,15 +146,98 @@ for (const property in object) {
 
 // 10 Arrya methods
 
-// some()
+// some() -- includes()
+
+//El método includes() determina si una matriz incluye un determinado elemento, devuelve trueo  false según corresponda.
 
 const meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo'];
 
+meses.includes('octubre')
+
+// resultado 'false'
+
 const productos = [
-    {nombre:televisor, precio:15000},
-    {nombre:pc, precio:4000},
-    {nombre:auto, precio:65000},
-    {nombre:aire, precio:5000},
-    {nombre:mesa, precio:1000},
-    {nombre:impresora, precio:15000}
+    {nombre:'televisor', precio:15000},
+    {nombre:'pc', precio:4000},
+    {nombre:'auto', precio:65000},
+    {nombre:'aire', precio:5000},
+    {nombre:'mesa', precio:1000},
+    {nombre:'impresora', precio:15000}
 ]
+
+const existe = productos.some((prod)=>{
+    prod.nombre === 'mesa'
+})
+
+//resultado 'true'
+
+//El método some() comprueba si al menos un elemento del array cumple con la condición implementada por la función proporcionada.
+
+// ambos son similares pero el includes sirve para un array de datos primitivos y el some sirve para arreglos de objetos.
+
+
+
+ // findIndex() 
+ //El método findIndex() devuelve el  índice del primer elemento de un array que cumpla con la función de prueba proporcionada. En caso contrario devuelve -1.
+
+ meses.findIndex((mes)=>{
+      mes === 'enero'
+ })
+
+ //resultado 0
+
+
+ //reduce()
+
+ //El método reduce() ejecuta una función reductora sobre cada elemento de un array, devolviendo como resultado un único valor.
+
+
+ const total = productos.reduce((total, producto)=>total +producto.precio, 0)
+
+ // resultado 105000, donde total arranca en 0 y a producto.precio se lo va sumando para dar el total.
+
+
+ //filter()
+ //El método filter()crea un nuevo array con todos los elementos que cumplen la condición implementada por la función dada.
+
+ const sinStock = productos.filter((p)=> p.nombre !== 'pc' )
+
+ // resultado [
+ // { nombre: 'televisor', precio: 15000 },
+ // { nombre: 'auto', precio: 65000 },
+ // { nombre: 'aire', precio: 5000 },
+ // { nombre: 'mesa', precio: 1000 },
+ // { nombre: 'impresora', precio: 15000 }
+//]
+
+//find()
+
+//El método find()devuelve el valor del primer elemento del array que cumple la función de prueba proporcionada.
+
+const array1 = [5, 12, 8, 130, 44];
+
+const found = array1.find(element => element > 10);
+
+// resultado 12
+
+// every()
+
+//Determina si todos los elementos en el array satisfacen una condición.
+
+const isBelowThreshold = (currentValue) => currentValue < 40;
+
+const array1 = [1, 30, 39, 29, 10, 13];
+
+
+// resultado true son todos menores a 40
+
+
+// concat()
+
+//El método concat()se usa para unir dos o más arrays. Este método no cambia los arrays existentes, sino que devuelve un nuevo array
+
+const array1 = ['a', 'b', 'c'];
+const array2 = ['d', 'e', 'f'];
+const array3 = array1.concat(array2);
+
+// resultado  ["a", "b", "c", "d", "e", "f"]
