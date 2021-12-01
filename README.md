@@ -104,3 +104,22 @@ Los temas que se visualizan son
                         
                         - For of
                         
+  🤓10 array methods: 
+  
+                        - some e include
+                        
+                        -reduce
+                        
+                        - filter
+                        
+                        - find
+                        
+                        -findIndex
+                        
+                        - concat
+                        
+                        - every
+                        
+                        
+                  
+                        
