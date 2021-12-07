@@ -79,3 +79,62 @@ const content = element.innerHTML;
 
 element.innerHTML = content;
 
+
+
+//remove()
+//El Element.remove()método elimina el elemento del árbol al que pertenece.
+
+var el = document.getElementById('div-02');
+el.remove();
+
+//createElement()
+//En un documento HTML, el método Document.createElement() crea un elemento HTML especificado por su tagName, o un  HTMLUnknownElement (en-US) si su tagName no se reconoce. En un documento XUL, crea el elemento XUL especificado. En otros documentos, crea un elemento con un namespace URI null.
+
+var element = document.createElement(tagName, [options]);
+
+
+
+//appendChild
+
+//Si el hijo(Child) es una referencia(hace referencia) hacia un nodo existente en el documento actual, este es quitado del padre actual para ser puesto en el nodo padre nuevo. La clave está en si el (Child) es una referencia a un nodo existente en el documento.
+
+element.appendChild(aChild);
+
+// 11-- Eventos
+
+
+//addEventListener
+//addEventListener() Registra un evento a un objeto en específico. El Objeto especifico puede ser un simple elemento en un archivo, el mismo  documento , una ventana o un  XMLHttpRequest.
+
+//Para registrar más de un eventListener, puedes llamar addEventListener() para el mismo elemento pero con diferentes tipos de eventos o parámetros de captura
+
+target.addEventListener(tipo, listener[ useCapture]);
+
+
+// eventos con el mouse
+
+//click
+
+//El evento "click" se dispara cuando se presiona el botón de un dispositivo de entrada (Mouse o Mousepad) sobre un elemento.
+
+document.getElementById("prueba").addEventListener("click", function( event ) {
+    // presentar la cuenta de clicks realizados sobre el elemento con id "prueba"
+    event.target.innerHTML = "Conteo de Clicks: " + event.detail;
+  }, false);
+
+  //mousedown
+  //El evento mousedownse activa cuando el botón de un dispositivo apuntador (usualmente el botón de un ratón) es presionado en un elemento.
+
+// eventos sobre inputs
+
+//keydown
+//El evento keydown se produce cuando se presiona una tecla.
+
+//A diferencia del evento keypress, el evento keydownes producido por todas las teclas, independientemente de si estas son caracteres o no.
+
+//blur
+//El evento blures disparado cuando un elemento ha perdido su foco. La diferencia principal entre este evento y focusout es que sólo el último se propaga (burbujas). 
+
+// Submit -- evento de un formulario
+
+//El submit evento se activa cuando <form> se envía.
