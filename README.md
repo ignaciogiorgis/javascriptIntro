@@ -104,7 +104,7 @@ Los temas que se visualizan son
                         
                         - For of
                         
-  🤓10 array methods: 
+🤓10 array methods: 
   
                         - some e include
                         
@@ -119,7 +119,30 @@ Los temas que se visualizan son
                         - concat
                         
                         - every
+ 
+ 💻 Javascrip06.js
                         
+🌍 11 DOM:
+                        - seleccion de elementos
                         
+                        - eventos
+                        
+💻 Javascrip07.js
+
+🤓12 Local Storage:
+
+                        - setItem
+                        
+                        -getItem
+                        
+                        -removeItem
+                        
+                        -JSON.stringify y JSON.parse
+
+
+                        
+                    
+                        
+                      
                   
                         
