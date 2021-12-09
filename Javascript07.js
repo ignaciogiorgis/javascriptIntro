@@ -30,3 +30,59 @@ localStorage.clear();
 //JSON.parse() es muy util para el paso inverso
 
 //El método  JSON.parse() analiza una cadena de texto como JSON, transformando opcionalmente el valor producido por el análisis.
+
+
+//13-- fechas en js 
+
+//Date
+
+//Permite trabajar con fechas y horas.
+
+new Date()
+new Date(milisegundos)
+new Date(cadenaFecha)
+new Date(año_num,mes_num,dia_num
+        [hor_num,min_num,seg_num,mils_num])
+
+//getFullYear
+//El método getFullYear() devuelve el año de la fecha indicada acorde a la hora local.
+
+const moonLanding = new Date('July 20, 69 00:20:18');
+
+console.log(moonLanding.getFullYear());
+
+// resultado 1969
+
+//14-- prototipos 
+
+//Los prototipos son un mecanismo mediante el cual los objetos en JavaScript heredan características entre sí. En este artículo, explicaremos como funcionan los prototipos y también cómo se pueden usar las propiedades de estos para añadir métodos a los contructores existentes
+
+function Persona(nombre, apellido, edad, genero, intereses) {
+
+        // definiendo de propiedades y métodos
+        this.first = first;
+        this.last = last;
+      //...
+}
+
+
+var person1 = new Persona('Bob', 'Smith', 32, 'hombre', ['music', 'skiing']);
+
+
+// creacion de prototipos
+
+function persona(nombre, saldo){
+        this.nombre = nombre,
+        this.saldo = saldo
+}
+
+const usuario = new persona('pedro', 6000);
+
+
+usuario.prototype.tipoCliente = function(){
+        console.log('desde proto');
+}
+
+// se agrega una funcion a nuestro prototipo por ejemplo para
+
+
