@@ -109,3 +109,25 @@ function getRealFloor(n) {
     return n-2;
   }
 }
+
+//Dados algunos palos por una matriz Vde números enteros positivos, donde V [i] representa la longitud de los palos, encuentre el número de formas en que podemos elegir tres de ellos para formar un triángulo.
+
+//Ejemplo
+
+
+
+function countingTriangles(V) {
+  let valid = 0;
+  for (let i = 0; i < V.length - 2; i++) {
+      const s1 = V[i];
+      for (let j = i+1; j < V.length - 1; j++) {
+          const s2 = V[j];
+          for (let k = j+1; k < V.length; k++) {
+              const s3 = V[k];
+              if(s1+s2 > s3 && s2+s3 > s1 && s1+s3 > s2) valid++;
+          }
+      }
+  }
+  return valid;
+}
+

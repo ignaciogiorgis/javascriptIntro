@@ -86,3 +86,5 @@ usuario.prototype.tipoCliente = function(){
 // se agrega una funcion a nuestro prototipo por ejemplo para
 
 
+
+
